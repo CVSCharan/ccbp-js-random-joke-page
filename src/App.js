@@ -27,23 +27,23 @@ function App() {
   };
 
   return (
-    <div class="bg-container p-3 d-flex flex-column justify-content-center text-center">
+    <div className="bg-container p-3 d-flex flex-column justify-content-center text-center">
       <img
         src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/random-joke-img.png"
-        class="w-25 ml-auto mr-auto"
+        className="w-25 ml-auto mr-auto"
         alt="img"
       />
-      <p id="jokeText" class="joke-text mt-4">
+      <p id="jokeText" className="joke-text mt-4">
         {joke}
       </p>
-      <div class="d-none mt-5 mb-5" id="spinner">
-        <div class="d-flex flex-row justify-content-center">
-          <div class="spinner-border" role="status"></div>
+      <div className="d-none mt-5 mb-5" id="spinner">
+        <div className="d-flex flex-row justify-content-center">
+          <div className="spinner-border" role="status"></div>
         </div>
       </div>
       <button
         id="jokeBtn"
-        class="joke-button p-1 ml-auto mr-auto mt-3"
+        className="joke-button p-1 ml-auto mr-auto mt-3"
         onClick={onClickButton}
       >
         Joke
